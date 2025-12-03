@@ -5,19 +5,19 @@ import io.flutter.embedding.engine.plugins.FlutterPlugin;
 import io.flutter.embedding.engine.plugins.activity.ActivityAware;
 import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding;
 import io.flutter.plugin.common.PluginRegistry;
-import io.flutter.plugin.common.PluginRegistry.Registrar;
+//import io.flutter.plugin.common.PluginRegistry.Registrar; - Removed for V2 embedding
 
 /** BackgroundFetchPlugin */
 public class BackgroundGeolocationFirebasePlugin implements FlutterPlugin, ActivityAware {
 
     // @deprecated Not used by v2.
-    public static void registerWith(Registrar registrar) {
-        BackgroundGeolocationFirebaseModule module = BackgroundGeolocationFirebaseModule.getInstance();
-        module.onAttachedToEngine(registrar.context(), registrar.messenger());
-        if (registrar.activity() != null) {
-            module.setActivity(registrar.activity());
-        }
-    }
+    //public static void registerWith(Registrar registrar) {
+    //    BackgroundGeolocationFirebaseModule module = BackgroundGeolocationFirebaseModule.getInstance();
+    //    module.onAttachedToEngine(registrar.context(), registrar.messenger());
+    //    if (registrar.activity() != null) {
+    //        module.setActivity(registrar.activity());
+    //    }
+    //}
 
     // @deprecated Called by Application#onCreate
     public static void setPluginRegistrant(PluginRegistry.PluginRegistrantCallback callback) {
