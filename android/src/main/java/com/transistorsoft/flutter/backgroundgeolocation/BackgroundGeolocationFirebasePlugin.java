@@ -20,9 +20,9 @@ public class BackgroundGeolocationFirebasePlugin implements FlutterPlugin, Activ
     //}
 
     // @deprecated Called by Application#onCreate
-    public static void setPluginRegistrant(PluginRegistry.PluginRegistrantCallback callback) {
-
-    }
+    //public static void setPluginRegistrant(PluginRegistry.PluginRegistrantCallback callback) {
+    //
+    //}
 
     public BackgroundGeolocationFirebasePlugin() { }
 
